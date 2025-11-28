@@ -43,3 +43,6 @@ opts = {
     },
   },
 }
+
+vim.g.snacks_animate = false
+vim.opt.spelllang = "es,en"
