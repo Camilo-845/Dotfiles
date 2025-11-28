@@ -40,6 +40,8 @@ alias grep='rg'
 
 alias lg='lazygit'
 
+alias obsidian='flatpak run --branch=stable --arch=x86_64 --command=obsidian.sh --file-forwarding md.obsidian.Obsidian @@u %U @@'
+
 random_cowsay() {
   local cow="${1:-$(cowsay -l | tail -n +2 | tr ' ' '\n' | shuf -n1)}"
   if [ -t 0 ]; then
