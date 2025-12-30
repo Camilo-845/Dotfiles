@@ -28,3 +28,23 @@ stow .
 - nvim
 - Ghosty
 - tmux
+
+# Used programs
+
+- ghostty
+- zsh
+- oh my Zsh
+- PowerLevel 10k
+- nvim
+- lazyvim
+- tmux
+- fastfetch
+- bat
+- zoxide
+- lazygit
+- exa
+- trans
+- github cli
+- sdkman
+- spring cli
+- xh
