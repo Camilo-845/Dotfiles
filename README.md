@@ -12,15 +12,14 @@ git clone https://github.com/camilo-845/Dotfiles.git ~/.dotfiles
 
 Move to `~/.dotfiles`
 
-```sh
+````sh
 cd ~/.dotfiles
-```
 
 install with stow
 
 ```sh
 stow .
-```
+````
 
 ## Configs
 
@@ -48,3 +47,4 @@ stow .
 - sdkman
 - spring cli
 - xh
+- xclip

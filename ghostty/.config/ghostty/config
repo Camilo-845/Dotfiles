@@ -1,9 +1,9 @@
-theme = dark:Aura,light:CLRS
+theme = light:CLRS, dark:detuned
+# theme = light:detuned, dark:CLRS
 font-size = 11 
 window-decoration =true 
 # keybind = global:cmd+/=toggle_quick_terminal
-background-opacity = 0.8
-background-blur-radius = 1
+background-opacity = 0.9
 
 #font-family = "MesloLGS NF"
 command = tmux new-session -A
