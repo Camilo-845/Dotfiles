@@ -3,7 +3,7 @@ return {
   version = "*",
   opts = {
     size = 15,
-    open_mapping = [[<C-_>]],
+    open_mapping = [[<C-7>]],
     start_in_insert = true,
     insert_mappings = true,
     terminal_mappings = true,
@@ -21,7 +21,7 @@ return {
       },
       FloatBorder = {
         guifg = "#7aa2f7", -- color del borde
-        guibg = "NONE", -- fondo del borde, o el color que quieras
+        guibg = "NONE",    -- fondo del borde, o el color que quieras
       },
     },
     float_opts = {
