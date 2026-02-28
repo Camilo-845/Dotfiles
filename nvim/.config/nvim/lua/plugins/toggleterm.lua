@@ -20,8 +20,8 @@ return {
         link = "Normal",
       },
       FloatBorder = {
-        guifg = "#7aa2f7", -- color del borde
-        guibg = "NONE",    -- fondo del borde, o el color que quieras
+        ctermfg = "Blue", -- color del borde
+        guibg = "NONE",   -- fondo del borde, o el color que quieras
       },
     },
     float_opts = {
