@@ -131,6 +131,7 @@ return {
           enable = false, -- Disable scroll animations
         },
       })
+      require("mini.icons").setup()
     end,
   },
 

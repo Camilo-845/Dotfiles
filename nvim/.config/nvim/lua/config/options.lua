@@ -46,3 +46,6 @@ opts = {
 
 vim.g.snacks_animate = false
 vim.opt.spelllang = "es,en"
+
+-- molten nvim
+vim.g.python3_host_prog = vim.fn.expand("~/.virtualenvs/neovim/bin/python3")

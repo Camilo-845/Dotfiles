@@ -12,4 +12,19 @@ vim.keymap.set("n", "<C-_>", "<cmd>ToggleTerm<cr>", { desc = "Open or Close Togg
 -- Mapeo para buscar y reemplazar en todo el archivo
 vim.api.nvim_set_keymap("n", "<leader>sr", [[:%s/]], { noremap = true, silent = true })
 -- Mapeo para buscar y reemplazar en selección visual
+--
 vim.api.nvim_set_keymap("v", "<leader>sr", [[:s/]], { noremap = true, silent = true })
+
+
+-- Molten nvim
+-- Guide here https://github.com/benlubas/molten-nvim/blob/main/docs/Virtual-Environments.md
+vim.keymap.set("n", "<localleader>ip", function()
+  local venv = os.getenv("VIRTUAL_ENV") or os.getenv("CONDA_PREFIX")
+  if venv ~= nil then
+    -- in the form of /home/benlubas/.virtualenvs/VENV_NAME
+    venv = string.match(venv, "/.+/(.+)")
+    vim.cmd(("MoltenInit %s"):format(venv))
+  else
+    vim.cmd("MoltenInit python3")
+  end
+end, { desc = "Initialize Molten for python3", silent = true })
