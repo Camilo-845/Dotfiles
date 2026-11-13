@@ -1,5 +1,6 @@
 return {
   "GustavEikaas/easy-dotnet.nvim",
+  enabled = true,
   dependencies = {
     "nvim-lua/plenary.nvim",
     "mfussenegger/nvim-dap",
@@ -7,7 +8,20 @@ return {
   config = function()
     local dotnet = require("easy-dotnet")
     dotnet.setup({
-      -- Leave your configuration hooks here
+      lsp = {
+        preload_roslyn = false,
+        restart_roslyn_on_branch_change = true,
+        roslynator_enabled = false,
+        auto_refresh_codelens = false,
+        config = {
+          settings = {
+            ["csharp|code_lens"] = {
+              dotnet_enable_references_code_lens = false,
+              dotnet_enable_tests_code_lens = false,
+            },
+          },
+        },
+      }
     })
 
     -- Correct keymaps for easy-dotnet
