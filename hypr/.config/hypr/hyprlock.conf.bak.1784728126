@@ -1,0 +1,61 @@
+source = ~/.config/omarchy/current/theme/hyprlock.conf
+
+general {
+    ignore_empty_input = true
+    # Adds a smoother transition when waking up
+    grace = 0
+    disable_loading = true
+}
+
+background {
+    monitor =
+    path = ~/.config/omarchy/current/background
+    color = $color
+    # Increased blur for a more premium "frosted" look
+    blur_passes = 3
+    blur_size = 8
+}
+
+input-field {
+    monitor =
+    size = 300, 60
+    outline_thickness = 4
+    dots_size = 0.2
+    dots_spacing = 0.2
+    dots_center = true
+    
+    # Using your theme variables
+    outer_color = $outer_color
+    inner_color = $inner_color
+    font_color = $font_color
+    check_color = $check_color
+    
+    # Rounding = -1 creates a pill shape; 10-20 creates soft corners
+    rounding = 20
+    
+    position = 0, -20
+    halign = center
+    valign = center
+
+    placeholder_text = 󰌾  Enter Password
+    hide_input = false
+    fail_text = <i>$FAIL <b>($ATTEMPTS)</b></i>
+    capslock_color = $check_color
+}
+
+# Added a Clock that respects your font
+label {
+    monitor =
+    text = $TIME
+    color = $font_color
+    font_size = 64
+    font_family = BitstromWera Nerd Font
+    position = 0, 80
+    halign = center
+    valign = center
+}
+
+# Fingerprint disabled - fprintd not installed (causes "User unknown" crash)
+# auth {
+#     fingerprint:enabled = false
+# }
