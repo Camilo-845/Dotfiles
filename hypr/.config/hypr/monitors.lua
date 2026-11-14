@@ -12,16 +12,16 @@ hl.monitor({ output = "HDMI-A-1", mode = "1920x1080@60", position = "0x0", scale
 -- hl.monitor({ output = "HDMI-A-1", mode = "1920x1080@60", position = "1366x-700", scale = omarchy_monitor_scale })
 
 for w = 1, 5 do
-  hl.workspace_rule({
-    workspace = tostring(w),
-    monitor   = "HDMI-A-1",
-  })
+	hl.workspace_rule({
+		workspace = tostring(w),
+		monitor = "HDMI-A-1",
+	})
 end
 
 -- Map Workspaces 6 to 10 to eDP-1
 for w = 6, 10 do
-  hl.workspace_rule({
-    workspace = tostring(w),
-    monitor   = "eDP-1",
-  })
+	hl.workspace_rule({
+		workspace = tostring(w),
+		monitor = "eDP-1",
+	})
 end

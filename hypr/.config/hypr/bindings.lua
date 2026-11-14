@@ -17,15 +17,15 @@
 -------------------------------------------------------------------------------
 -- Web Apps
 hl.unbind("SUPER + SHIFT + M")
-o.bind("SUPER + SHIFT + M", "Music", "omarchy-launch-webapp \"https://music.youtube.com\"")
+o.bind("SUPER + SHIFT + M", "Music", 'omarchy-launch-webapp "https://music.youtube.com"')
 hl.unbind("SUPER + SHIFT + G")
 o.bind("SUPER + SHIFT + G", "WhatsApp", { webapp = "https://web.whatsapp.com/", focus = true })
 hl.unbind("SUPER + SHIFT + A")
-o.bind("SUPER + SHIFT + A", "Gemini", "omarchy-launch-webapp \"https://gemini.google.com\"")
+o.bind("SUPER + SHIFT + A", "Gemini", 'omarchy-launch-webapp "https://gemini.google.com"')
 hl.unbind("SUPER + SHIFT + C")
-o.bind("SUPER + SHIFT + C", "Calendar", "omarchy-launch-webapp \"https://app.hey.com/calendar/weeks/\"")
+o.bind("SUPER + SHIFT + C", "Calendar", 'omarchy-launch-webapp "https://app.hey.com/calendar/weeks/"')
 hl.unbind("SUPER + SHIFT + E")
-o.bind("SUPER + SHIFT + E", "Email", "omarchy-launch-webapp \"https://mail.google.com\"")
+o.bind("SUPER + SHIFT + E", "Email", 'omarchy-launch-webapp "https://mail.google.com"')
 
 -------------------------------------------------------------------------------
 -- Window Navigation & Overrides
@@ -51,8 +51,6 @@ o.bind("SUPER + CTRL + K", "Show key bindings", "omarchy-menu-keybindings")
 o.bind("SUPER + I", "Toggle window split", "hyprctl dispatch layoutmsg togglesplit")
 
 o.bind("SUPER + I", "Toggle window split", hl.dsp.layout("togglesplit"))
-
-
 
 -- Plugins
 --
